@@ -41,6 +41,17 @@ def find_greater_pair(src)
 end
 
 def total_even_pairs(src)
+  total = 0
+  
+  scr.each do |sub_arr|
+    num1 = sub_arr[0]
+    num2 = sub_arr[1]
+    if num1 % 2 == 0 && num2 % 2 == 0
+      total += num1 + num2
+    end 
+  end 
+  return total 
+  
   # src will be an array of [ [number1, number2], ... [numberN, numberM] ]
   # if both numbers in the pair are even, then add both those numbers to the
   # total
