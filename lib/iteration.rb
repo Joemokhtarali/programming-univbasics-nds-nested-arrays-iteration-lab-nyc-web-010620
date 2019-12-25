@@ -17,11 +17,14 @@ def join_ingredients(src)
   # As such, there should be a new String for each inner array, or pair
 end
 
-def greatest_pair(array)
-  total = 0
+def num(array)
+  num1 = array[0]
+  num2 = array[1]
   
-  array.each { |num| total += num }
-  return total
+  if num1 > num2 
+    return num1 
+  else 
+    return num2
 end
 
 def find_greater_pair(src)
