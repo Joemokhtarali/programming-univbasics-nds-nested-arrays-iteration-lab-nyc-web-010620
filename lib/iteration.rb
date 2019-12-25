@@ -16,7 +16,25 @@ def join_ingredients(src)
   # As such, there should be a new String for each inner array, or pair
 end
 
+def greatest_pair(array)
+  total = 0
+  
+  array.each { |num| total += num }
+  return total
+end
+
 def find_greater_pair(src)
+  greatest = scr[0]
+  
+  scr.each do |sub_arr|
+    if greatest_pair(sub_arr) > greatest_pair(greatest)
+      greatest = sub_arr
+    end 
+  end 
+  
+  return greatest
+       
+      
   # src will be an array of [ [number1, number2], ... [numberN, numberM] ]
   # Produce a new Array that contains the larger number of each of the pairs
   # that are in the inner Arrays
