@@ -1,4 +1,12 @@
 def join_ingredients(src)
+  array = []
+  
+  scr.each do |sub_arr|
+    first = sub_arr[0]
+    second = sub_arr[1]
+    array.push("I love #{first} and #{second} on my pizza")
+  end 
+  
   # Given an Array of 2-element Arrays ( [ [food1, food2], [food3, # food4]....[foodN, foodM]]):
   #
   # Build a new Array that contains strings where each pair of foods is
