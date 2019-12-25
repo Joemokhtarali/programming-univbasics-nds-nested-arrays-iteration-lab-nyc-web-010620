@@ -43,9 +43,7 @@ def find_greater_pair(src)
 end 
       
      return greatest
-  end 
-  
-  return greatest
+
        
       
   # src will be an array of [ [number1, number2], ... [numberN, numberM] ]
