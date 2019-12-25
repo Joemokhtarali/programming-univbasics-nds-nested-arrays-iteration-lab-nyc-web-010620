@@ -25,15 +25,24 @@ def num(array)
     return num1 
   else 
     return num2
+  end 
 end
 
 def find_greater_pair(src)
-  greatest = src[0]
+  greatest = []
   
   src.each do |sub_arr|
-    if greatest_pair(sub_arr) > greatest_pair(greatest)
-      greatest = sub_arr
-    end 
+    num1 = array[0]
+  num2 = array[1]
+  
+  if num1 > num2 
+    greatest << num1 
+  else 
+    greatest << num2
+  end 
+end 
+      
+     return greatest
   end 
   
   return greatest
