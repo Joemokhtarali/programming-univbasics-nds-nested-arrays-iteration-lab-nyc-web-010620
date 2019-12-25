@@ -31,7 +31,7 @@ end
 def find_greater_pair(src)
   greatest = []
   
-  src.each do |sub_arr|
+  src.each do |array|
     num1 = array[0]
   num2 = array[1]
   
