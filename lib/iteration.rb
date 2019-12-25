@@ -1,7 +1,7 @@
 def join_ingredients(src)
   array = []
   
-  scr.each do |sub_arr|
+  src.each do |sub_arr|
     first = sub_arr[0]
     second = sub_arr[1]
     array.push("I love #{first} and #{second} on my pizza")
@@ -25,9 +25,9 @@ def greatest_pair(array)
 end
 
 def find_greater_pair(src)
-  greatest = scr[0]
+  greatest = src[0]
   
-  scr.each do |sub_arr|
+  src.each do |sub_arr|
     if greatest_pair(sub_arr) > greatest_pair(greatest)
       greatest = sub_arr
     end 
@@ -44,7 +44,7 @@ end
 def total_even_pairs(src)
   total = 0
   
-  scr.each do |sub_arr|
+  src.each do |sub_arr|
     num1 = sub_arr[0]
     num2 = sub_arr[1]
     if num1 % 2 == 0 && num2 % 2 == 0
